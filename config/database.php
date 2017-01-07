@@ -1,5 +1,21 @@
 <?php
 
+// For Heroku
+$databaseUrl = env("DATABASE_URL");
+if(!empty($databaseUrl)){
+    $url = parse_url($databaseUrl);
+
+    $host = $url["host"];
+    $database = substr($url["path"], 1);
+    $username = $url["user"];
+    $password = $url["pass"];
+
+    putenv("DB_HOST={$host}");
+    putenv("DB_DATABASE={$database}");
+    putenv("DB_USERNAME={$username}");
+    putenv("DB_PASSWORD={$password}");
+}
+
 return [
 
     /*
