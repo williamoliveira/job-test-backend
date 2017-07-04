@@ -1,6 +1,6 @@
 ## Installation
-- Clone the repo `git clone git@github.com:williamoliveira/job-test-backend.git job-test-backend`
-- Navigate to it `cd job-test-backend`
+- Clone the repo `git clone git@github.com:williamoliveira/react-demo-backend.git react-demo-backend`
+- Navigate to it `cd react-demo-backend`
 - Install dependencies `composer install`
 - Copy .env `cp .env.example .env`
 - Create your db and set it on .env
